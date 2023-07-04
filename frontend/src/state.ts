@@ -88,6 +88,8 @@ export class Node {
   public lon: Maybe<Types.Longitude>;
   public city: Maybe<Types.City>;
 
+  public target_arch: Maybe<Types.Timestamp>;
+
   private _changeRef = 0;
   private readonly subscriptionsConsensus = new Set<(node: Node) => void>();
 
@@ -255,6 +257,7 @@ export interface StateSettings {
   blockpropagation: boolean;
   blocklasttime: boolean;
   uptime: boolean;
+  target_arch: boolean;
 }
 
 export interface State {
