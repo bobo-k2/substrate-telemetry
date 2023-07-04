@@ -38,6 +38,7 @@ import {
   BlockPropagationColumn,
   LastBlockColumn,
   UptimeColumn,
+  CpuArchitectureColumn,
 } from './';
 
 export type Column =
@@ -58,7 +59,8 @@ export type Column =
   | typeof BlockTimeColumn
   | typeof BlockPropagationColumn
   | typeof LastBlockColumn
-  | typeof UptimeColumn;
+  | typeof UptimeColumn
+  | typeof CpuArchitectureColumn;
 
 export interface ColumnProps {
   node: Node;
